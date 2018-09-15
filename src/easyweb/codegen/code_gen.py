@@ -20,7 +20,7 @@ def get_template(template_name):
 
 
 def render_template(template, data):
-    return template.render(data)
+    return template.render(data=data)
 
 
 def write(file_name, template_string):
