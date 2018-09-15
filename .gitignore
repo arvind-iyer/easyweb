@@ -2,4 +2,6 @@ env/
 .envrc
 *.swp
 __pycache__
-
+*.egg-info
+.pytest_cache/
+*/.pytest_cache/
