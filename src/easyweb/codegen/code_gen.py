@@ -1,7 +1,7 @@
 from jinja2 import Environment, PackageLoader, select_autoescape
 
 env = Environment(
-    loader=PackageLoader('easyweb', 'templates')  # ,
+    loader=PackageLoader("easyweb", "templates")  # ,
     #  autoescape=select_autoescape(['html', 'xml'])
 )
 
@@ -9,7 +9,9 @@ env = Environment(
 # output_file_name = "flask_application.py"
 
 
-def create_code(data, template_file, output_file_name):
+def create_code(
+    data, template_file="template.py", output_file_name="flask_application.py"
+):
     template = get_template(template_file)
     template_string = render_template(template, data)
     write(output_file_name, template_string)
