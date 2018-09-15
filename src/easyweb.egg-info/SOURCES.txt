@@ -1,0 +1,9 @@
+src/easyweb/__init__.py
+src/easyweb/cli.py
+src/easyweb/core.py
+src/easyweb.egg-info/PKG-INFO
+src/easyweb.egg-info/SOURCES.txt
+src/easyweb.egg-info/dependency_links.txt
+src/easyweb.egg-info/entry_points.txt
+src/easyweb.egg-info/requires.txt
+src/easyweb.egg-info/top_level.txt
