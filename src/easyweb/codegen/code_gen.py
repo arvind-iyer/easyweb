@@ -5,11 +5,11 @@ env = Environment(
     #  autoescape=select_autoescape(['html', 'xml'])
 )
 
-template_file = "template.py"
-output_file_name = "flask_application.py"
+# template_file = "template.py"
+# output_file_name = "flask_application.py"
 
 
-def create_code(module_name, class_name, methods):
+def create_code(module_name, class_name, methods, template_file, output_file_name):
     template = get_template(template_file)
     template_string = render_template(template, module_name, class_name, methods)
     write(output_file_name, template_string)
