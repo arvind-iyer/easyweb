@@ -3,5 +3,5 @@ env/
 *.swp
 __pycache__
 *.egg-info
-.pytest-cache/
-*/.pytest-cache/
+.pytest_cache/
+*/.pytest_cache/
