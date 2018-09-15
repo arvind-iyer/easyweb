@@ -213,4 +213,7 @@ pip-selfcheck.json
 
 
 # End of https://www.gitignore.io/api/python,intellij+all
+*.egg-info
+.pytest_cache/
+*/.pytest_cache/
 
