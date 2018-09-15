@@ -1,4 +1,5 @@
 import easyweb.core
+import pytest
 
 
 class Numbers(object):
@@ -10,6 +11,6 @@ class Numbers(object):
         return self.n
 
 
-if __name__ == "__main__":
+def test_classmethods():
     num = Numbers()
-    print(easyweb.core.classmethods(num))
+    assert easyweb.core.classmethods(num) == ["add"]
