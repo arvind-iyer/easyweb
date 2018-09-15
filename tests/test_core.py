@@ -1,14 +1,5 @@
 import easyweb.core
-import pytest
-
-
-class Numbers(object):
-    def __init__(self):
-        self.n = 0
-
-    def add(self, a):
-        self.n += a
-        return self.n
+from .test_model import Numbers
 
 
 def test_classmethods():
@@ -17,5 +8,13 @@ def test_classmethods():
 
 
 def test_classname():
-    num = Numbers()
-    assert easyweb.core.classname(num) == "Numbers"
+    assert easyweb.core.classname(Numbers()) == "Numbers"
+
+
+def test_modulename():
+    assert easyweb.core.modulename(Numbers()) == "tests.test_model"
+
+
+def test_methods():
+    data = easyweb.core.main(Numbers())
+    assert data["methods"] == {"add": ["a"]}
