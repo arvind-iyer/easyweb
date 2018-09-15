@@ -1,3 +1,0 @@
-[console_scripts]
-easyweb = easyweb.cli:main
-
