@@ -52,5 +52,4 @@ def main(class_object):
         "module_name": modulename(class_object),
         "class_name": classname(class_object),
         "methods": create_methods_dict(class_object),
-        "object": class_object,
     }
