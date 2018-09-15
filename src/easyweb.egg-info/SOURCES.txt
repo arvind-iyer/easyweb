@@ -7,3 +7,5 @@ src/easyweb.egg-info/dependency_links.txt
 src/easyweb.egg-info/entry_points.txt
 src/easyweb.egg-info/requires.txt
 src/easyweb.egg-info/top_level.txt
+src/easyweb/codegen/__init__.py
+src/easyweb/codegen/code_gen.py
