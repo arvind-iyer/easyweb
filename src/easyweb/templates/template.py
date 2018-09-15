@@ -8,7 +8,7 @@ import {{ data['module_name'] }}
 
 @app.route("/{{ method_name }}")
 def {{ method_name }}():
-	result = {{ data['class_name'] }}_instance.{{ method_name }}( ', '.join(data['methods']['method_name'] ))
+	result = {{ data['class_name'] }}_instance.{{ method_name }}({{ ', '.join(data['methods'][method_name])}} )
 	return jsonify(result)
 
 {% endfor %}
