@@ -2,6 +2,7 @@ env/
 .envrc
 *.swp
 __pycache__
+*easyweb.egg*
 
 
 # Created by https://www.gitignore.io/api/python,intellij+all
