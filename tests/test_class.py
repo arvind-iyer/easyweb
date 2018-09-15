@@ -1,5 +1,4 @@
-test_class = 
-{
+test_class = {
     "module_name": "mod_name",
     "class_name": "class_name",
     "methods":

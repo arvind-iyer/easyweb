@@ -2,4 +2,5 @@ env/
 .envrc
 *.swp
 __pycache__
+src/easyweb/test.py
 
