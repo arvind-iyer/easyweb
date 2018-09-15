@@ -14,3 +14,8 @@ class Numbers(object):
 def test_classmethods():
     num = Numbers()
     assert easyweb.core.classmethods(num) == ["add"]
+
+
+def test_classname():
+    num = Numbers()
+    assert easyweb.core.classname(num) == "Numbers"
