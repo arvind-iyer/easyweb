@@ -6,5 +6,5 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     entry_points={"console_scripts": ["easyweb = easyweb.cli:main"]},
-    install_requires=[],
+    install_requires=["Flask==1.0.2"],
 )
