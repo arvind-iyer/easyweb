@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 import {{ data['module_name'] }}
+data['class_name'] }}_instance = {{ data['module_name'] }}.{{ data['class_name'] }}()
 
 {% for method_name in data['methods'] %}
 
